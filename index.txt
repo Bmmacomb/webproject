@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Movie Info</title>
+	</head>
+	<body>
+		<header>
+			<h1>Movie Info</h1>
+		</header>
+		<main>
+						
+		</main>
+		<footer>
+		<p>all data comes from <a href="http://www.omdbapi.com/">http://www.omdbapi.com/</a></p>
+		</footer>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src='sun.js'></script>
+	</body>
+</html>

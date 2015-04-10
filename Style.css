@@ -1,0 +1,53 @@
+body{
+    background-color: #0f0f77;
+    align-content: center;
+text-align: center;
+}
+h1{
+    color: white;
+
+background-color: #0f0f77;
+}
+main{
+text-align:center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+
+}
+table{
+    align-content: center;    
+   
+    border:  solid black;
+
+
+}
+.form{
+color: white;
+}
+
+td{
+    border: solid green;
+   
+    background-color: #44a1ff;
+    text-align: center;
+}
+footer{
+    color:  white;
+background-color: #0f0f77;
+}
+.par1{
+color: white;
+    text-align: center;
+}
+
+.tb{
+    
+margin-right: 35% ; 
+margin-left: 35%;
+
+}
+a{
+color: white;
+}

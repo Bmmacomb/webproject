@@ -1,0 +1,32 @@
+(function() {
+	"use strict";
+	
+	var main = function() {
+		var url = 'http://www.omdbapi.com/?t=the+matrix&y=&plot=short&r=json';
+		$.getJSON(url, function(sunResponse) {
+			var $sunTable = $('<table>');
+			var response = sunResponse;
+			for (var prop in response) {
+				var $item = $('<tr>');
+                if (prop === "Poster"){
+                    console.log("der");
+                    var $itemProp = $('<td>').text(prop);
+                    
+                    var $itemVal = $('<td>').prepend($('<img>',{src:response[prop]}).alt= '<a href=' + response[prop] +  '> Unable to directly retrieve image. Click here instead </a>');
+                
+                }else{
+				var $itemProp = $('<td>').text(prop);
+                
+				var $itemVal = $('<td>').text(response[prop]);
+                }
+				$item.append($itemProp);
+				$item.append($itemVal);
+				$sunTable.append($item);	
+			}
+			
+			$('main').append($sunTable);
+		});
+	};
+	
+	$(document).ready(main);
+}());
